@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -25,16 +24,38 @@
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
 // Toggle global options
-$enable-gradients: true;
+$enable-gradients: false;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 // Customize some defaults
 $body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
+$body-bg: #ccc;
+
+// KULEUVEN
+
+$border-radius: 0;
+$card-border-width: 0;
+
+// kuleuven colors
+$blue: #067aac !default; // KUL-specific
+$indigo: #147fa1 !default; // KUL-specific
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #e03f47 !default; // KUL-specific
+$orange: #d68800 !default;
+$yellow: #dc9a04 !default;
+$green: #3ebd92 !default; // KUL-specific
+$teal: #004070 !default; // KUL-specific
+$cyan: #1d8db0 !default; // KUL-specific
+$gray: #333333 !default; // KUL-specific
+$brand: #067aac !default; // KUL-specific
 $success: #7952b3;
+
+$primary: $blue;
+$secondary: $indigo;
+$tertiary: $teal;
 
 // Required
 @import "bootstrap/scss/functions";
@@ -46,41 +67,40 @@ $success: #7952b3;
 @import "bootstrap/scss/reboot";
 
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/accordion";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
-// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
-// @import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
-
 
 //
 // Custom styles
@@ -90,4 +110,21 @@ $success: #7952b3;
 
 body {
   padding: 1.5rem;
+}
+
+// kuleuven
+.card-img {
+  & .card-text {
+    // padding-top: 3em;
+    @extend .text-white;
+  }
+}
+.card-primary {
+  background-color: $blue;
+  @extend .text-white;
+}
+
+.card-secondary {
+  background-color: $teal;
+  @extend .text-white;
 }
