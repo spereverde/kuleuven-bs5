@@ -1,0 +1,15 @@
+.card-img {
+  & .card-text {
+    // padding-top: 3em;
+    @extend .text-white;
+  }
+}
+.card-primary {
+  background-color: $blue;
+  @extend .text-white;
+}
+
+.card-secondary {
+  background-color: $teal;
+  @extend .text-white;
+}

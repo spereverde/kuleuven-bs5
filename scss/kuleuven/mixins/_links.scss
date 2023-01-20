@@ -1,0 +1,99 @@
+@mixin link-variant($link: $color-link, $hover: null, $visited: null) {
+  @if $visited == null {
+    $visited: $link;
+  }
+  @if $hover == null {
+    $hover: $link;
+  }
+
+  color: $link;
+
+  &:visited {
+    color: $visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+
+@mixin inherit-link-color {
+  a {
+    color: inherit;
+  }
+
+  a:not(.btn) {
+    color: inherit;
+  }
+}
+
+@mixin icon-link($icon: "") {
+  font-family: $font-family-icons;
+  content: $icon;
+  text-transform: lowercase;
+  font-feature-settings: "liga";
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@mixin icon-after-link($icon: "") {
+  &:after {
+    @include icon-link($icon);
+    margin-left: 3px;
+  }
+}
+
+@mixin icon-before-link($icon: "") {
+  &:before {
+    @include icon-link($icon);
+    margin-right: 3px;
+  }
+}
+
+// generate classes for icon links
+@mixin icon-before-class($icon) {
+  .icon-#{$icon}-before {
+    &:before {
+      @include icon-link($icon);
+      margin-right: 3px;
+    }
+  }
+}
+
+@mixin icon-after-class($icon) {
+  .icon-#{$icon}-after {
+    @include icon-after-link($icon);
+  }
+}
+
+$icons: (
+  "call",
+  "description",
+  "directions_bike",
+  "home",
+  "image",
+  "keyboard_arrow_left",
+  "keyboard_arrow_right",
+  "keyboard_arrow_down",
+  "keyboard_arrow_up",
+  "lock",
+  "lock_open",
+  "person",
+  "person_outline",
+  "people",
+  "people_outline",
+  "picture_as_pdf",
+  "place",
+  "today"
+);
+@mixin generate-icon-before-link() {
+  @each $icon in $icons {
+    @include icon-before-class($icon);
+  }
+}
+@mixin generate-icon-after-link() {
+  @each $icon in $icons {
+    @include icon-after-class($icon);
+  }
+}

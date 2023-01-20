@@ -30,32 +30,10 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #ccc;
 
 // KULEUVEN
 
-$border-radius: 0;
-$card-border-width: 0;
-
-// kuleuven colors
-$blue: #067aac !default; // KUL-specific
-$indigo: #147fa1 !default; // KUL-specific
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #e03f47 !default; // KUL-specific
-$orange: #d68800 !default;
-$yellow: #dc9a04 !default;
-$green: #3ebd92 !default; // KUL-specific
-$teal: #004070 !default; // KUL-specific
-$cyan: #1d8db0 !default; // KUL-specific
-$gray: #333333 !default; // KUL-specific
-$brand: #067aac !default; // KUL-specific
-$success: #7952b3;
-
-$primary: $blue;
-$secondary: $indigo;
-$tertiary: $teal;
+@import "kuleuven/variables";
 
 // Required
 @import "bootstrap/scss/functions";
@@ -106,25 +84,19 @@ $tertiary: $teal;
 // Custom styles
 //
 
-@import "icon-list";
+// @import "icon-list";
 
-body {
-  padding: 1.5rem;
-}
+// body {
+//   padding: 1.5rem;
+// }
 
-// kuleuven
-.card-img {
-  & .card-text {
-    // padding-top: 3em;
-    @extend .text-white;
-  }
-}
-.card-primary {
-  background-color: $blue;
-  @extend .text-white;
-}
+// KU LEUVEN
+// mixins
+@import "kuleuven/mixins/links";
 
-.card-secondary {
-  background-color: $teal;
-  @extend .text-white;
-}
+// components
+@import "kuleuven/components/logo";
+
+@import "kuleuven/components/navbar";
+@import "kuleuven/components/cards";
+@import "kuleuven/components/lists";

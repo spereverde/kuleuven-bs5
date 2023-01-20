@@ -1,0 +1,71 @@
+// override bootstrap defaults
+
+$body-color: #333;
+$body-bg: #fff;
+$font-sans-serif: Arial;
+
+$border-radius: 0;
+$card-border-width: 0;
+
+// kuleuven colors
+// $gray: #6c757d;
+
+$blue-75: #004070 !default;
+$blue-50: #067aac !default;
+$petrol-50: #147fa1 !default;
+
+$primary: $blue-50 !default;
+$secondary: $petrol-50 !default;
+$tertiary: $blue-75 !default;
+
+$blue: $blue-50; // KUL-specific
+$indigo: $petrol-50 !default; // KUL-specific
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #e03f47 !default; // KUL-specific
+$orange: #d68800 !default;
+$yellow: #dc9a04 !default;
+$green: #3ebd92 !default; // KUL-specific
+$teal: $blue-75; // KUL-specific
+$cyan: #1d8db0 !default; // KUL-specific
+$gray: #333333 !default; // KUL-specific
+$brand: #067aac !default; // KUL-specific
+
+// $success: #7952b3;
+$success: #3ebd92;
+$info: #1d8db0;
+$warning: #dc9a04;
+$danger: #e03f47;
+
+// Link color
+$link-color: $tertiary !default;
+$link-hover-color: mix(black, $link-color, 25%) !default;
+$link-color-visited: mix(black, $link-color, 5%) !default;
+
+// fonts
+$font-family-sans: "Source Sans Pro", sans-serif !default;
+$font-family-serif: "Source Serif Pro", serif !default;
+$font-family-icons: "Material Icons" !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default; // KUL>BS
+$font-family-base: $font-family-sans !default; // KUL>BS
+// bs vars:
+$font-sans-serif: $font-family-sans;
+$font-monospace: $font-family-monospace;
+
+// WEB2016 migration
+
+// $gray-100: #333333 !default; // $gray-dark
+// $gray-75: #8f8e8e !default; // $gray-800
+// $gray-50: #bcbcbc !default; // gray-600
+// $gray-25: #d8d9da !default; // gray-400
+// $gray-0: #ededed !default; // gray-200
+// $color-text: $body-color;
+// Link color
+// $color-link: $link-color;
+// $color-link-hover: $link-hover-color;
+// $rh-xxs: 20px * 0.25;
+// $rh-xsm: 20px * 0.5;
+// $rh-sml: 20px;
+// $rh-med: 20px * 1.5;
+// $rh-lrg: 20px * 2;
+// $rh-xlr: 20px * 2.5;
