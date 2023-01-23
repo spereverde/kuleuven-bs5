@@ -94,9 +94,14 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 // mixins
 @import "kuleuven/mixins/links";
 
+//core
+@import "kuleuven/core/type";
+
 // components
 @import "kuleuven/components/logo";
 
 @import "kuleuven/components/navbar";
 @import "kuleuven/components/cards";
+@import "kuleuven/components/inline";
 @import "kuleuven/components/lists";
+@import "kuleuven/components/localheader";

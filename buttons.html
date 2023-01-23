@@ -1,0 +1,95 @@
+---
+layout: kuleuven.njk
+title: Buttons
+lang: nl
+cards: [gray, primary, secondary, tertiary]
+---
+
+<h1>{{ title }}</h1>
+<h2>Buttons</h2>
+
+
+<div class="container">
+  <a class="btn btn-primary" href="#">Primary</a>
+  <a class="btn btn-secondary" href="#">Secondary</a>
+  <a class="btn btn-tertiary" href="#">Tertiary</a>
+</div>
+
+<p></p>
+<h2>Ghost buttons</h2>
+
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <div class="card card-primary">
+      <div class="card-body"><a href="#" class="btn btn-ghost">Ghost</a></div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <div class="card card-tertiary">
+      <div class="card-body"><a href="#" class="btn btn-ghost">Ghost</a></div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h2>Melding buttons</h2>
+<a class="btn btn-success" href="#">Success</a>
+<a class="btn btn-info" href="#">Info</a>
+<a class="btn btn-warning" href="#">Warning</a>
+<a class="btn btn-danger" href="#">Danger</a>
+<a class="btn btn-ext" href="#">External</a>
+<p></p><a class="btn btn-success" href="#"><i class="material-icons">check</i> Success</a><a class="btn btn-info"
+  href="#"><i class="material-icons">info</i> Info</a><a class="btn btn-warning" href="#"><i
+    class="material-icons">warning</i> Warning</a><a class="btn btn-danger" href="#"><i
+    class="material-icons">error_outline</i> Danger</a><a class="btn icon-launch-after" href="#">External <i
+    class="material-icons">launch</i></a>
+
+<p></p>
+<h2>All buttons - default and outline</h2>
+{% include "components/campuslabels.html" %}
+<p>
+  <a class="btn btn-primary" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-primary-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-secondary" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-secondary-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-tertiary" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-tertiary-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-success" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-success-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-info" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-info-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-warning" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-warning-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+<p>
+  <a class="btn btn-danger" href="#" role="button">Kies je opleiding</a>
+  <a class="btn btn-danger-outline" href="#" role="button">Kies je opleiding</a>
+</p>
+
+<h2>Button tags</h2>
+<div class="row"><a class="btn btn-primary" href="#" role="button">Link </a>&nbsp;
+  <button class="btn btn-primary" type="submit">Button</button>&nbsp;
+  <input class="btn btn-primary" type="button" value="Input">&nbsp;
+  <input class="btn btn-primary" type="submit" value="Submit">
+</div>
+
+<h2>Button sizes</h2>
+<p>Large buttons</p>
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-tertiary btn-lg">Large button</button><br><br>
+<p>Small buttons</p>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-tertiary btn-sm">Small button</button><br><br>
+<p>Block level buttons</p>
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-tertiary btn-lg btn-block">Block level button</button>

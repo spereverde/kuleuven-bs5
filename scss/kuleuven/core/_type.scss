@@ -1,0 +1,13 @@
+.heading {
+  //   font-family: $font-family-serif;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  //   color: $tertiary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @extend .heading;
+}

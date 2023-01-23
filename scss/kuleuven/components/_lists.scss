@@ -1,13 +1,13 @@
 .campus-labels {
-  //   @extend .inline;
+  @extend .inline;
   margin: 0 0 10px;
   padding: 0;
 
   li {
     @extend .badge;
-    // @extend .inline-item;
+    @extend .inline-item;
     font-weight: normal;
-    background: tertiary;
+    background: $tertiary;
     color: $white;
     white-space: normal;
     padding: 0.7em 0.9em;

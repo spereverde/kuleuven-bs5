@@ -4,8 +4,11 @@ $body-color: #333;
 $body-bg: #fff;
 $font-sans-serif: Arial;
 
-$border-radius: 0;
+$border-radius: 20px;
+
+// card variables
 $card-border-width: 0;
+$card-border-radius: 0;
 
 // kuleuven colors
 // $gray: #6c757d;
@@ -51,6 +54,13 @@ $font-family-base: $font-family-sans !default; // KUL>BS
 // bs vars:
 $font-sans-serif: $font-family-sans;
 $font-monospace: $font-family-monospace;
+
+// headings variables
+$headings-font-family: $font-family-serif;
+$headings-color: $tertiary;
+
+// forms
+$input-border-radius: 3px;
 
 // WEB2016 migration
 

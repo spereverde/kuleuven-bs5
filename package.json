@@ -15,13 +15,17 @@
     "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "npm-run-all css-lint css"
+    "test": "npm-run-all css-lint css",
+    "build-11ty": "npx @11ty/eleventy",
+    "start-11ty": "npx @11ty/eleventy --serve",
+    "11ty": "npm-run-all build start-11ty"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.0"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^10.4.8",
     "nodemon": "^2.0.19",
     "npm-run-all": "^4.1.5",

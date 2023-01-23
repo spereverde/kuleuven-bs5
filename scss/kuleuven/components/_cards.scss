@@ -1,3 +1,9 @@
+.card {
+  h2 {
+    font-family: $font-family-serif;
+  }
+}
+
 .card-img {
   & .card-text {
     // padding-top: 3em;

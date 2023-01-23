@@ -1,0 +1,23 @@
+---
+layout: kuleuven.njk
+title: Campuslabels
+lang: nl
+cards: [gray, primary, secondary, tertiary]
+---
+
+<h1>{{ title }}</h1>
+
+{% include "components/campuslabels.html" %}
+
+<div class="row">
+    {% for item in cards %}
+    <div class="col-md-6">
+        <div class="card card-{{item}}">
+            <div class="card-body">
+                <h2>Campussen</h2>
+                {% include "components/campuslabels.html" %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

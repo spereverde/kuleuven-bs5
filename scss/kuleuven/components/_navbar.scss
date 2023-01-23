@@ -676,10 +676,10 @@
       @extend .float-lg-end;
       @extend .inline-share;
 
-      // span,
-      // a {
-      //   @extend .inline-item;
-      // }
+      span,
+      a {
+        @extend .inline-item;
+      }
 
       svg {
         height: 30px;

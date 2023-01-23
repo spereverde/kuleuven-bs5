@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>{{ title }} - KU Leuven housestyle - Bootstrap 5</title>
+    <link rel="stylesheet"
+        href="//fonts.googleapis.com/css2?family=Material+Icons&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap">
+</head>
+
+<body>
+    <!-- {% block header %}
+    This is the default content
+    {% endblock %} -->
+    {% if lang == "nl" %}
+      {% include "./kuleuven/header.nl.html" %}
+    {% else %}
+      {% include "./kuleuven/header.en.html" %}
+    {% endif %}
+    {% include "localheader.html" %}
+    <section class="main">
+        <div class="container">
+            {{ content | safe }}
+        </div>
+    </section>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
