@@ -1,0 +1,39 @@
+---
+layout: layouts/kuleuven.njk
+title: Images
+lang: nl
+bootstrap_version: 5.3
+---
+
+<h1>{{ title }}</h1>
+
+<a href="https://getbootstrap.com/docs/{{ bootstrap_version }}/content/images/">
+    https://getbootstrap.com/docs/{{ bootstrap_version }}/content/images/
+</a>
+
+<h2>Responsive images</h2>
+
+<img src="/img/sample.jpg" class="img-fluid" alt="sample">
+<!-- <img src="/img/sample.jpg" class="img-fluid" alt="sample" width="1200"> -->
+<p>&nbsp;</p>
+<p class="text-lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante
+    venenatis dapibus posuere velit aliquet.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus
+    posuere velit aliquet. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas
+    eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+
+<h2>Image thumbnails</h2>
+<img src="/img/sample.jpg" class="img-thumbnail" alt="sample" width="200">
+<p></p>
+<img src="/img/sample.jpg" class="float-start" alt="sample" width="200">
+<img src="/img/sample.jpg" class="float-end" alt="sample" width="200">
+<img src="/img/sample.jpg" class="rounded mx-auto d-block" alt="sample" width="400">
+<div class="text-center">
+    <img src="/img/sample.jpg" class="rounded" alt="sample" width="400">
+</div>
+
+<h2>Picture</h2>
+<picture>
+    <source srcset="/img/sample.jpg" type="image/svg+xml">
+    <img src="/img/sample.jpg" class="img-fluid img-thumbnail" alt="sample">
+</picture>
