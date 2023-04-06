@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>KU Leuven housestyle - Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css2?family=Material+Icons&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.kuleuven.be/">
+          <img
+            class="logo"
+            alt="logo"
+            src="https://stijl.kuleuven.be/releases/latest/img/svg/logo.svg"
+            width="157"
+            height="56"
+          />
+        </a>
+
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-row-reverse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a href="https://nieuws.kuleuven.be/">Nieuws</a></li>
+                <li>
+                  <a href="https://www.kuleuven.be/personeel/jobsite/">Jobs</a>
+                </li>
+                <li>
+                  <a href="https://www.kuleuven.be/kuleuven/contact">Contact</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary">
+              <i class="material-icons">search</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Get started with KU Leuven Bootstrap</h1>
+      <div class="col-lg-8 px-0">
+        <p>
+          <a
+            href="https://github.com/twbs/examples/tree/main/sass-js/"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </p>
+        <p class="fs-4">
+          You've successfully loaded up a Bootstrap example! It's loaded up with
+          <a href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for
+          compiling our Sass and JavaScript to your needs.
+        </p>
+        <p>
+          If this button appears blue and the link appears green, you've done
+          it!
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary me-3"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+      >
+        Toggle offcanvas
+      </button>
+      <a href="#" class="text-success">Example link</a>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="col-1 my-5 mx-0" />
+      <ul>
+        <li><a href="cards.html">cards</a></li>
+        <li><a href="components.html">components</a></li>
+      </ul>
+
+      <h2>Guides</h2>
+      <p>
+        Read more detailed instructions and documentation on using or
+        contributing to Bootstrap.
+      </p>
+      <ul class="icon-list">
+        <li>
+          <a
+            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+            >Bootstrap quick start guide</a
+          >
+        </li>
+        <li>
+          <a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/"
+            >Bootstrap Webpack guide</a
+          >
+        </li>
+        <li>
+          <a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/"
+            >Bootstrap Parcel guide</a
+          >
+        </li>
+        <li>
+          <a href="https://getbootstrap.com/docs/5.2/getting-started/vite/"
+            >Bootstrap Vite guide</a
+          >
+        </li>
+      </ul>
+
+      <hr class="mt-5 mb-4" />
+
+      <p class="text-muted">
+        Created and open sourced by the Bootstrap team. Licensed MIT.
+      </p>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

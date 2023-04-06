@@ -1,231 +1,117 @@
-<!doctype html>
-<html lang="en">
+---
+layout: layouts/kuleuven.njk
+title: KU Leuven - NL
+lang: nl
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>KU Leuven housestyle - Bootstrap 5</title>
-  <link rel="stylesheet"
-    href="//fonts.googleapis.com/css2?family=Material+Icons&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap">
-</head>
-
-<body>
-  <nav class="global-header noindex hidden-print">
-    <div class="container">
-      <a class="navbar-brand" href="https://www.kuleuven.be/"><img class="logo" alt="logo"
-          src="https://stijl.kuleuven.be/releases/latest/img/svg/logo.svg" width="157" height="56" /></a>
-      <div class="controls">
-        <form class="form-search hidden-md-down" role="search" action="https://icts.kuleuven.be/apps/searchredirector"
-          method="get" name="searchform">
-          <input class="form-control" type="text" placeholder="Zoeken in KU Leuven" name="k" id="words" />
-          <button class="btn btn-primary" type="submit">
-            <i class="material-icons">search</i>
-          </button>
-        </form>
-
-        <a href="#" class="btn-toggle hidden-md-down" role="button" aria-expanded="false" aria-controls="kuleuven-menu"
-          data-toggle="collapse" data-target="#kuleuven-menu"><span class="lines"></span></a>
-
-        <a href="#" class="btn-toggle hidden-lg-up js-flyout-toggle flyout-toggle collapsed" role="button"
-          aria-expanded="false" aria-controls="flyout-menu" data-toggle="collapse" data-target="#flyout-menu"><span
-            class="lines"></span></a>
-      </div>
-    </div>
-
-    <div class="container hidden-md-down">
-      <div class="nav navbar-nav navbar-collapse collapse" id="kuleuven-menu" role="navigation" aria-expanded="false">
-        <nav class="nav-main pull-lg-left">
-          <ul>
-            <li><a href="https://www.kuleuven.be/onderzoek/">Onderzoek</a></li>
-            <li><a href="https://www.kuleuven.be/studeren/">Studeren</a></li>
-            <li>
-              <a href="https://www.kuleuven.be/overons/">Over KU&nbsp;Leuven</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="nav-service pull-lg-right">
-          <ul>
-            <li class="dropdown">
-              <a href="#" id="a-z-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A-Z <i
-                  class="material-icons">keyboard_arrow_down</i></a>
-              <ul class="dropdown-menu" aria-labelledby="a-z-menu">
-                <li><a href="https://bib.kuleuven.be/">Bibliotheken</a></li>
-                <li><a href="https://www.kuleuven.be/campus">Campussen</a></li>
-                <li><a href="https://admin.kuleuven.be/">Diensten</a></li>
-                <li>
-                  <a href="https://www.kuleuven.be/onderzoek/onderzoekstructuur.html">Departementen</a>
-                </li>
-                <li>
-                  <a href="https://www.kuleuven.be/kuleuven/faculteiten">Faculteiten</a>
-                </li>
-                <li>
-                  <a href="https://www.kuleuven.be/wieiswie">Personeelsleden</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" id="info-voor-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info
-                voor <i class="material-icons">keyboard_arrow_down</i></a>
-              <ul class="dropdown-menu" aria-labelledby="info-voor-menu">
-                <li>
-                  <a href="https://www.kuleuven.be/toekomstigestudenten/">Toekomstige student</a>
-                </li>
-                <li><a href="https://www.kuleuven.be/studenten/">Student</a></li>
-                <li>
-                  <a href="https://www.kuleuven.be/personeel/jobsite/">Sollicitant</a>
-                </li>
-                <li>
-                  <a href="https://admin.kuleuven.be/mykuleuven/">Personeelslid</a>
-                </li>
-                <li><a href="https://alum.kuleuven.be/">Alumnus</a></li>
-                <li>
-                  <a href="https://www.kuleuven.be/onderzoek/overheid/">Overheid, bedrijf en maatschappij</a>
-                </li>
-                <li><a href="https://www.kuleuven.be/pers/">Pers</a></li>
-                <li><a href="https://www.kuleuven.be/mecenaat/">Schenker</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" id="interne-tools-menu" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Interne tools
-                <i class="material-icons">keyboard_arrow_down</i></a>
-              <ul class="dropdown-menu" aria-labelledby="interne-tools-menu">
-                <li>
-                  <a href="https://admin.kuleuven.be/mykuleuven/">My KU Leuven</a>
-                </li>
-                <li><a href="https://toledo.kuleuven.be/">Toledo</a></li>
-                <li>
-                  <a href="https://www.kuleuven.be/sapredir/kuloket">KU&nbsp;Loket</a>
-                </li>
-                <li><a href="https://webmail.kuleuven.be/">Webmail</a></li>
-                <li><a href="https://www.kuleuven.be/wieiswie">Wie-is-wie</a></li>
-                <li>
-                  <a href="https://www.kuleuven.be/wieiswie/nl/unit/50000050">Organigram</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="https://nieuws.kuleuven.be/">Nieuws</a></li>
-            <li><a href="https://www.kuleuven.be/personeel/jobsite/">Jobs</a></li>
-            <li>
-              <a href="https://www.kuleuven.be/kuleuven/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </nav>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <div class="container">
-      <a class="navbar-brand" href="https://www.kuleuven.be/">
-        <img class="logo" alt="logo" src="https://stijl.kuleuven.be/releases/latest/img/svg/logo.svg" width="157"
-          height="56" />
-      </a>
-
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a href="https://nieuws.kuleuven.be/">Nieuws</a></li>
-              <li><a href="https://www.kuleuven.be/personeel/jobsite/">Jobs</a></li>
-              <li>
-                <a href="https://www.kuleuven.be/kuleuven/contact">Contact</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary"><i class="material-icons">search</i></button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Get started with KU Leuven Bootstrap</h1>
-    <div class="col-lg-8 px-0">
-      <p>
-        <a href="https://github.com/twbs/examples/tree/main/sass-js/" target="_blank" rel="noopener">View on GitHub</a>
-      </p>
-      <p class="fs-4">You've successfully loaded up a Bootstrap example! It's loaded up with <a
-          href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for compiling our Sass and JavaScript to your
-        needs.</p>
-      <p>If this button appears blue and the link appears green, you've done it!</p>
-    </div>
-
-    <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasExample">Toggle offcanvas</button>
-    <a href="#" class="text-success">Example link</a>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-          etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <hr class="col-1 my-5 mx-0">
-    <ul>
-      <li><a href="cards.html">cards</a></li>
-      <li><a href="components.html">components</a></li>
-    </ul>
-
-    <h2>Guides</h2>
-    <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-    <ul class="icon-list">
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap quick start guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/vite/">Bootstrap Vite guide</a></li>
-    </ul>
-
-    <hr class="mt-5 mb-4">
-
-    <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+<div class="container py-4 px-3 mx-auto">
+  <h1>Get started with KU Leuven Bootstrap</h1>
+  <div class="col-lg-8 px-0">
+    <p>
+      <a
+        href="https://github.com/twbs/examples/tree/main/sass-js/"
+        target="_blank"
+        rel="noopener"
+        >View on GitHub</a
+      >
+    </p>
+    <p class="fs-4">
+      You've successfully loaded up a Bootstrap example! It's loaded up with
+      <a href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for
+      compiling our Sass and JavaScript to your needs.
+    </p>
+    <p>
+      If this button appears blue and the link appears green, you've done it!
+    </p>
   </div>
 
-  <script type="module" src="js/main.js"></script>
-</body>
+  <button
+    type="button"
+    class="btn btn-primary me-3"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample"
+  >
+    Toggle offcanvas
+  </button>
+  <a href="#" class="text-success">Example link</a>
 
-</html>
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you
+        have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="col-1 my-5 mx-0" />
+  <ul>
+    <li><a href="cards.html">cards</a></li>
+    <li><a href="components.html">components</a></li>
+  </ul>
+
+  <h2>Guides</h2>
+  <p>
+    Read more detailed instructions and documentation on using or contributing
+    to Bootstrap.
+  </p>
+  <ul class="icon-list">
+    <li>
+      <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+        >Bootstrap quick start guide</a
+      >
+    </li>
+    <li>
+      <a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/"
+        >Bootstrap Webpack guide</a
+      >
+    </li>
+    <li>
+      <a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/"
+        >Bootstrap Parcel guide</a
+      >
+    </li>
+    <li>
+      <a href="https://getbootstrap.com/docs/5.2/getting-started/vite/"
+        >Bootstrap Vite guide</a
+      >
+    </li>
+  </ul>
+
+  <hr class="mt-5 mb-4" />
+
+  <p class="text-muted">
+    Created and open sourced by the Bootstrap team. Licensed MIT.
+  </p>
+</div>
+
+<script type="module" src="js/main.js"></script>

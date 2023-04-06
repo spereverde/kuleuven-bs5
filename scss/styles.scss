@@ -26,6 +26,7 @@
 // Toggle global options
 $enable-gradients: false;
 $enable-shadows: true;
+$enable-dark-mode: false;
 
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
@@ -75,7 +76,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 @import "bootstrap/scss/placeholders";
 
 // Helpers
-// @import "helpers";
+// @import "bootstrap/scss/helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
@@ -83,12 +84,6 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 //
 // Custom styles
 //
-
-// @import "icon-list";
-
-// body {
-//   padding: 1.5rem;
-// }
 
 // KU LEUVEN
 // mixins

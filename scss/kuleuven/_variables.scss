@@ -13,30 +13,13 @@ $card-border-radius: 0;
 // kuleuven colors
 // $gray: #6c757d;
 
-$blue-75: #004070 !default;
-$blue-50: #067aac !default;
-$petrol-50: #147fa1 !default;
+$primary: #067aac;
+$secondary: #147fa1;
+$tertiary: #004070;
 
-$primary: $blue-50 !default;
-$secondary: $petrol-50 !default;
-$tertiary: $blue-75 !default;
 $dark: $tertiary !default;
 $dark-text: #fff !default;
 
-$blue: $blue-50; // KUL-specific
-$indigo: $petrol-50 !default; // KUL-specific
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #e03f47 !default; // KUL-specific
-$orange: #d68800 !default;
-$yellow: #dc9a04 !default;
-$green: #3ebd92 !default; // KUL-specific
-$teal: $blue-75; // KUL-specific
-$cyan: #1d8db0 !default; // KUL-specific
-$gray: #333333 !default; // KUL-specific
-$brand: #067aac !default; // KUL-specific
-
-// $success: #7952b3;
 $success: #3ebd92;
 $info: #1d8db0;
 $warning: #dc9a04;
