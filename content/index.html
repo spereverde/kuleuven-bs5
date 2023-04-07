@@ -2,11 +2,12 @@
 layout: layouts/kuleuven.njk
 title: Content
 lang: nl
+bootstrap_version: 5.3
 ---
 
 <h1>{{ title }}</h1>
 
-<h1>typography</h1>
+<h2>typography</h2>
 
 <a
   href="https://getbootstrap.com/docs/{{ bootstrap_version }}/content/typography/"
@@ -14,8 +15,53 @@ lang: nl
   https://getbootstrap.com/docs/{{ bootstrap_version }}/content/typography/
 </a>
 
+<h2>forms</h2>
+
+<a href="https://getbootstrap.com/docs/{{ bootstrap_version }}/forms/overview/">
+  https://getbootstrap.com/docs/{{ bootstrap_version }}/forms/overview/
+</a>
 <h2>tables</h2>
 
 <a href="https://getbootstrap.com/docs/{{ bootstrap_version }}/content/tables/">
   https://getbootstrap.com/docs/{{ bootstrap_version }}/content/tables/
 </a>
+
+<h2>images</h2>
+
+<a href="https://getbootstrap.com/docs/{{ bootstrap_version }}/content/images/">
+  https://getbootstrap.com/docs/{{ bootstrap_version }}/content/images/
+</a>
+
+<h3>Responsive images</h3>
+
+<img src="/img/sample.jpg" class="img-fluid" alt="sample" />
+<!-- <img src="/img/sample.jpg" class="img-fluid" alt="sample" width="1200"> -->
+<p>&nbsp;</p>
+<p class="text-lead">
+  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer
+  posuere erat a ante venenatis dapibus posuere velit aliquet.
+</p>
+<p>
+  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer
+  posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere
+  consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas
+  eget quam. Donec id elit non mi porta gravida at eget metus.
+</p>
+
+<h3>Image thumbnails</h3>
+<img src="/img/sample.jpg" class="img-thumbnail" alt="sample" width="200" />
+<p></p>
+<img src="/img/sample.jpg" class="float-start" alt="sample" width="200" />
+<img src="/img/sample.jpg" class="float-end" alt="sample" width="200" />
+<img
+  src="/img/sample.jpg"
+  class="rounded mx-auto d-block"
+  alt="sample"
+  width="200"
+/>
+
+<h3>Picture</h3>
+<picture>
+  <source srcset="/img/sample.jpg" type="image/svg+xml" />
+  <img src="/img/sample.jpg" class="img-fluid img-thumbnail" alt="sample" />
+</picture>

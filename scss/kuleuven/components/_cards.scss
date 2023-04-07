@@ -11,11 +11,13 @@
   }
 }
 .card-primary {
-  background-color: $blue;
-  @extend .text-white;
+  background-color: $primary;
 }
 
 .card-secondary {
-  background-color: $teal;
-  @extend .text-white;
+  background-color: $secondary;
+}
+
+.card-tertiary {
+  background-color: $tertiary;
 }

@@ -35,6 +35,8 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 // KULEUVEN
 
 @import "kuleuven/variables";
+$navbar-toggler-border-color: transparent;
+$navbar-light-toggler-border-color: transparent;
 
 // Required
 @import "bootstrap/scss/functions";
@@ -95,8 +97,5 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 // components
 @import "kuleuven/components/logo";
 
-@import "kuleuven/components/navbar";
 @import "kuleuven/components/cards";
-@import "kuleuven/components/inline";
-@import "kuleuven/components/lists";
-@import "kuleuven/components/localheader";
+@import "kuleuven/components/campuslabels";
